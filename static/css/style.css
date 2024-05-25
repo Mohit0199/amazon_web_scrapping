@@ -1,0 +1,92 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #18191a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #012c53fb;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-form input[type="submit"] {
+  padding: 10px 20px;
+  border: 1px solid #cacccefb;
+  border-left: none;
+  background-color: #31577efb;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-form input[type="submit"]:hover {
+  background-color: #012c53fb;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #004b92fb;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+}
+
+tbody tr:nth-child() {
+  background-color: #18191a;
+}
+
+tbody td {
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .search-form input[type="text"] {
+      width: 200px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+}
